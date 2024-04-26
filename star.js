@@ -1,3 +1,5 @@
+// This is Object "Star" withthese three funkctions: constructor ( creating object ), update ( move starts from middle of monitor behind ship ), show ( thes draw start tu object ) 
+
 class Star {
 
   constructor() {
@@ -25,7 +27,6 @@ class Star {
     let sy = map(this.y / this.z, 0, 1, 0, height);
 
     let r = map(this.z, 0, width, 4, 0);
-    //ellipse(sx, sy, r, r);
 
     let px = map(this.x / this.pz, 0, 1, 0, width);
     let py = map(this.y / this.pz, 0, 1, 0, height);
