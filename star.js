@@ -1,11 +1,12 @@
-// This is Object "Star" withthese three funkctions: constructor ( creating object ), update ( move starts from middle of monitor behind ship ), show ( thes draw start tu object ) 
+/* This is Object "Star" withthese three funkctions: constructor ( creating object ), update 
+( move starts from middle of monitor behind ship ), show ( thes draw start tu object ) */
 
 class Star {
 
   constructor() {
-    this.x = random(-width, width);
-    this.y = random(-height, height);
-    this.z = random(width);
+    this.x = random(-width, width);       // Thanks this is starting point of stars more middle 
+    this.y = random(-height, height);      
+    this.z = random(width);               // than 16:9 monitors resolution is here Z-width when is monitor more upside than wide it makes more reslistic feelings.
     this.pz = this.z;
   }
 
